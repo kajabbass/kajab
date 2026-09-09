@@ -465,13 +465,16 @@ const familyData = [
   { id: "g5_sire", name: "Siré (Elder)", years: "", parentId: "g4_ousman", story: "" },
   { id: "g5_fathe", name: "Fathe", years: "", parentId: "g4_ousman", story: "" },
   { id: "g5_farain", name: "Farain Isatou", years: "", parentId: "g4_ousman", story: "" },
-  { id: "g5_omar", name: "Omar", years: "", parentId: "g4_ousman", story: "" }
+  { id: "g5_omar", name: "Omar", years: "", parentId: "g4_ousman", story: "" },
+  
+// ============ GENERATION 6 ============
+  { id: "g6_olivia", name: "Olivia Grace", years: "b. 2016", parentId: "g5_michael", viaSpouse: "Sarah Sarfo", story: "" },
+  { id: "g6_micah", name: "Micah Jussay", years: "b. 2017", parentId: "g5_michael", viaSpouse: "Sarah Sarfo", story: "" },
+  { id: "g6_olivia", name: "Madeline Kajab", years: "b. 2019", parentId: "g5_michael", viaSpouse: "Sarah Sarfo", story: "" },
+  { id: "g6_olivia", name: "Vivian-Rose Oulilang", years: "b. 2021", parentId: "g5_michael", viaSpouse: "Sarah Sarfo", story: "" },
 ];
   
-  // ============ GENERATION 6 ============
-  { id: "g6_olivia", name: "Olivia Grace", years: "b. 2016", parentId: "g5_michael", viaSpouse: "Sarah Sarfo", story: "" },
-
-/* ============================================================
+  /* ============================================================
    Rendering logic below — you shouldn't need to edit this.
    ============================================================ */
 
@@ -502,7 +505,7 @@ function buildGenerations(data){
 
 const treeEl = document.getElementById("kbTree");
 const generations = buildGenerations(familyData);
-const genLabels = ["First Generation", "Second Generation", "Third Generation", "Fourth Generation", "Fifth Generation"];
+const genLabels = ["First Generation", "Second Generation", "Third Generation", "Fourth Generation", "Fifth Generation", "Sixth Generation"];
 
 generations.forEach((gen, gi) => {
   const head = document.createElement("div");
